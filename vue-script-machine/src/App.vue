@@ -1,8 +1,11 @@
 <template>
   <div>
     <div id="nav">
+      <div class="container-fluid">
       <router-link to="/">Home</router-link> |
       <router-link to="/creator">Creator</router-link>
+
+      </div>
     </div>
     <router-view />
   </div>

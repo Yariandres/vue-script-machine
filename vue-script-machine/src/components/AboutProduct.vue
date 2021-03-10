@@ -1,9 +1,9 @@
 <template>
-   <div class="abput-product">
-      <h2>About The Product</h2>
+   <div class="about-product">
+      <h4 class="text-dark">About The Product</h4>
 
       <div class="form-group d-flex flex-column">
-         <label for="q1" class="form-label">
+         <label for="q1" class="form-label text-dark">
             <span class="font-weight-bold">Q1: Name brand of the product:</span>
             What is the name brand of product?
          </label>
@@ -16,8 +16,8 @@
          />
       </div>
 
-      <div class="form-group d-flex flex-column">
-         <label for="q2" class="form-label">
+      <div class="form-group mt-5 d-flex flex-column">
+         <label for="q2" class="form-label text-dark">
             <span class="font-weight-bold"
                >Q1: Name of the product: 1. What is the name of the product you
                are selling.</span
