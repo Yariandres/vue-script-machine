@@ -12,7 +12,8 @@
             type="text"
             id="q1"
             class="form-control"
-            placeholder="Home now - Apple - Moder furniture"
+            placeholder="Ikea - Apple - Moder furniture"
+            v-model="brandName"
          />
       </div>
 
@@ -22,8 +23,7 @@
                >Q1: Name of the product: 1. What is the name of the product you
                are selling.</span
             >
-            (Example: 6 Set Kitchen Wooden Spoon - Flight Pillow - Iphone
-            Cover)
+            (Example: 6 Set Kitchen Wooden Spoon - Flight Pillow - Iphone Cover)
          </label>
 
          <input
@@ -31,13 +31,36 @@
             id="q2"
             class="form-control"
             placeholder="6 Set Kitchen Wooden Spoon"
+            v-model="productName"
          />
       </div>
+      <button type="button" class="btn btn-warning" v-on:click="onReset">Reset fields</button>
    </div>
 </template>
 
 <script>
-export default {};
+export default {
+   data() {
+      return {
+         brandName: "",
+         productName: "",
+      };
+   },
+   methods: {
+      onReset() {
+         this.brandName = ""
+         this.productName = ""
+      }
+   },
+   watch: {
+      brandName() {
+         this.$emit("brandName", this.brandName);
+      },
+      productName() {
+         this.$emit("productName", this.productName);
+      },
+   },
+};
 </script>
 
 <style>
