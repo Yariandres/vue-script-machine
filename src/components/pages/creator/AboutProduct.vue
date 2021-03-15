@@ -1,9 +1,9 @@
 <template>
-   <div class="about-product">
-      <h4 class="text-dark">About The Product</h4>
+   <div class="about-product p-5 text-dark ">
+      <h4>About The Product</h4>
 
       <div class="form-group d-flex flex-column">
-         <label for="q1" class="form-label text-dark">
+         <label for="q1" class="form-label">
             <span class="font-weight-bold">Q1: Name brand of the product:</span>
             What is the name brand of product?
          </label>
@@ -14,13 +14,12 @@
             class="form-control"
             placeholder="Ikea - Apple - Moder furniture"
             v-model="brandName"
-            v-on:input="setBrand($event.target.value)"
-            
+            v-on:input="setBrand($event.target.value)"            
          />
       </div>
 
       <div class="form-group mt-5 d-flex flex-column">
-         <label for="q2" class="form-label text-dark">
+         <label for="q2" class="form-label">
             <span class="font-weight-bold"
                >Q1: Name of the product: 1. What is the name of the product you
                are selling.</span
@@ -63,3 +62,10 @@ export default {
    },
 };
 </script>
+
+<style>
+.bgAboutProduct {
+   background-color: #f6f9fc;
+}
+
+</style>

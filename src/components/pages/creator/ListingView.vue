@@ -1,13 +1,18 @@
 <template>
-   <div cla="listView">
-      <div class="text-dark">
-         <p class="lead bg-light p-3 rounded text-dark">{{ productBrand }}</p>
-      </div>
+   <div class="listView p-5">
+      
+         <div class="text-dark">
+            <p class="listinPreview lead bg-light p-3 rounded text-dark">
+               {{ productBrand }} - {{productName}}
+            </p>
+         </div>
 
-      <small>{{currentLength}}</small>
+         <div class="text-right">
+            <small class="font-weight-bold">{{ currentLength }}</small>
+         </div>
+     
    </div>
 </template>
-
 <script>
 export default {
    props: {
@@ -33,3 +38,18 @@ export default {
    },
 };
 </script>
+
+<style lang="scss" scope>
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Montserrat:wght@500;600&display=swap");
+
+.listinPreview {
+   font-family: "Fira Sans", sans-serif;
+   font-weight: 500;
+   color: #2f2f4d !important;
+
+   position: -webkit-sticky;
+   position: sticky;
+   top: 0;
+}
+
+</style>

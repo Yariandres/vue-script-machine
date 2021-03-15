@@ -1,7 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Home from "../views/Home.vue";
-import Creator from "../views/Creator.vue";
+import Home from "../components/pages/home/Home.vue";
+import Creator from "../components/pages/creator/Creator.vue";
 
 Vue.use(VueRouter);
 
