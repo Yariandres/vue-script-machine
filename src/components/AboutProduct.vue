@@ -14,6 +14,8 @@
             class="form-control"
             placeholder="Ikea - Apple - Moder furniture"
             v-model="brandName"
+            v-on:input="setBrand($event.target.value)"
+            
          />
       </div>
 
@@ -32,6 +34,7 @@
             class="form-control"
             placeholder="6 Set Kitchen Wooden Spoon"
             v-model="productName"
+            v-on:input="setName($event.target.value)"
          />
       </div>
       <button type="button" class="btn btn-warning" v-on:click="onReset">Reset fields</button>
@@ -50,18 +53,13 @@ export default {
       onReset() {
          this.brandName = ""
          this.productName = ""
-      }
-   },
-   watch: {
-      brandName() {
-         this.$emit("brandName", this.brandName);
       },
-      productName() {
-         this.$emit("productName", this.productName);
+      setBrand(value) {      
+         this.$emit("brandName", value);
+      },
+      setName(value) {
+         this.$emit("productName", value);
       },
    },
 };
 </script>
-
-<style>
-</style>
