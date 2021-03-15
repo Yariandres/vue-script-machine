@@ -6,13 +6,15 @@
          <div class="col bg-light p-5">
             <about-product
                v-on:brandName="productBrand = $event"
-               v-on:productName="productName= $event"
+               v-on:productName="productName = $event"
             ></about-product>
          </div>
 
-         <div class="col">
-
-            <listing-view :productBrand="productBrand" :productName="productName"></listing-view>
+         <div class="col p-5">
+            <listing-view
+               :productBrand="productBrand"
+               :productName="productName"
+            ></listing-view>
          </div>
       </div>
    </div>
@@ -21,13 +23,13 @@
 <script>
 import HeroSection from "../components/HeroSection";
 import AboutProduct from "../components/AboutProduct";
-import ListingView from "../components/pages/creator/ListingView"
+import ListingView from "../components/pages/creator/ListingView";
 
 export default {
    components: {
       HeroSection,
       AboutProduct,
-      ListingView
+      ListingView,
    },
 
    data() {
