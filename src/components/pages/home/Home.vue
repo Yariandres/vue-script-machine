@@ -1,16 +1,17 @@
 <template>
   <div class="container">
-    <h1>Home component!</h1>
+    <hero-section/>
   
   </div>
 </template>
 
 <script>
+import HeroSection from './HeroSection';
 
 export default {
   name: "Home",
   components: {
-    
+    HeroSection
   }
 };
 </script>
