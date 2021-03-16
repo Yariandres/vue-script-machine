@@ -29,8 +29,6 @@ import ListingView from "./ListingView";
 
 // UI
 
-
-
 export default {
    components: {
       HeroSection,
