@@ -24,7 +24,7 @@
                >Q1: Name of the product: 1. What is the name of the product you
                are selling.</span
             >
-            (Example: 6 Set Kitchen Wooden Spoon - Flight Pillow - Iphone Cover)
+            (Example: 6 Set Kitchen Wooden Spoon - Nylon Braided Lightning to USB A Cable - Iphone Cover)
          </label>
 
          <input

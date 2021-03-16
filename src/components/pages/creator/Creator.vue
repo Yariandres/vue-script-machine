@@ -8,26 +8,6 @@
                v-on:brandName="productBrand = $event"
                v-on:productName="productName = $event"
             ></about-product>
-            <about-product
-               v-on:brandName="productBrand = $event"
-               v-on:productName="productName = $event"
-            ></about-product>
-            <about-product
-               v-on:brandName="productBrand = $event"
-               v-on:productName="productName = $event"
-            ></about-product>
-            <about-product
-               v-on:brandName="productBrand = $event"
-               v-on:productName="productName = $event"
-            ></about-product>
-            <about-product
-               v-on:brandName="productBrand = $event"
-               v-on:productName="productName = $event"
-            ></about-product>
-            <about-product
-               v-on:brandName="productBrand = $event"
-               v-on:productName="productName = $event"
-            ></about-product>
          </div>
 
          <div class="col">
@@ -35,6 +15,8 @@
                :productBrand="productBrand"
                :productName="productName"
             ></listing-view>
+
+            <listing-icon />
          </div>
       </div>
    </div>
@@ -45,11 +27,14 @@ import HeroSection from "./HeroSection";
 import AboutProduct from "./AboutProduct";
 import ListingView from "./ListingView";
 
+// UI
+
 export default {
    components: {
       HeroSection,
       AboutProduct,
       ListingView,
+
    },
 
    data() {
