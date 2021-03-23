@@ -14,7 +14,7 @@
             class="form-control"
             placeholder="Baleaf Sports - Apple - Moder furniture"
             v-model="brandName"
-            v-on:input="setBrand($event.target.value)"            
+            v-on:input="setBrand($event.target.value)"
          />
       </div>
 
@@ -22,9 +22,12 @@
          <label for="q2" class="form-label">
             <span class="font-weight-bold"
                >Q1: Name of the product: 1. What is the name of the product you
-               are selling</span
-            >
-            <span class="text-secondary"> (Example: 6 Set Kitchen Wooden Spoon - Nylon Braided Lightning to USB A Cable - Iphone Cover)</span>
+               are sellingZ
+            </span>
+            <span class="text-secondary">
+               (Example: 6 Set Kitchen Wooden Spoon - Nylon Braided Lightning to
+               USB A Cable - Iphone Cover)
+            </span>
          </label>
 
          <input
@@ -36,7 +39,9 @@
             v-on:input="setName($event.target.value)"
          />
       </div>
-      <button type="button" class="btn btn-warning" v-on:click="onReset">Reset fields</button>
+      <button type="button" class="btn btn-warning" v-on:click="onReset">
+         Reset fields
+      </button>
    </div>
 </template>
 
@@ -50,10 +55,10 @@ export default {
    },
    methods: {
       onReset() {
-         this.brandName = ""
-         this.productName = ""
+         this.brandName = "";
+         this.productName = "";
       },
-      setBrand(value) {      
+      setBrand(value) {
          this.$emit("brandName", value);
       },
       setName(value) {
@@ -67,5 +72,4 @@ export default {
 .bgAboutProduct {
    background-color: #f6f9fc;
 }
-
 </style>

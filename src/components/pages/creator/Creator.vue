@@ -5,15 +5,18 @@
 
          <ul class="list-group list-group-flush instructions">
             <li class="list-group-item">
-               <BIconCheckCircle variant="secondary" /> Fill in the form bellow
+               <BIconCheckCircle variant="secondary" /> 
+               Fill in the form bellow
                and click the "Generate" button below
             </li>
             <li class="list-group-item">
-               <BIconCheckCircle variant="secondary" /> Edit the content to read
+               <BIconCheckCircle variant="secondary" /> 
+               Edit the content to read
                well if needed
             </li>
             <li class="list-group-item">
-               <BIconCheckCircle variant="secondary" /> Upload it to amazon
+               <BIconCheckCircle variant="secondary" /> 
+               Upload it to amazon
             </li>
          </ul>
       </div>
