@@ -5,7 +5,7 @@
       <div class="form-group d-flex flex-column">
          <label for="q3" class="form-label">
             <span class="font-weight-bold">
-               Q1: Name brand of the product:</span>
+               Q1: Who is your target audience:</span>
                What is the name brand of product?
          </label>
 
